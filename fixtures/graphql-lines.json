@@ -1,0 +1,30 @@
+{
+  "observation": {
+    "stage": "response",
+    "request": {
+      "method": "POST",
+      "url": "https://www.instagram.com/graphql/query",
+      "host": "www.instagram.com",
+      "path": "/graphql/query",
+      "headers": {}
+    },
+    "response": {
+      "statusCode": 200,
+      "headers": {
+        "Content-Type": [
+          "application/json"
+        ]
+      },
+      "contentType": "application/json",
+      "body": "for (;;);{\"data\": {\"xdt_api__v1__clips__home__connection_v2\": {\"edges\": [{\"node\": {\"media\": {\"__typename\": \"XDTMediaDict\", \"code\": \"ExampleReel01\", \"id\": \"10000000000000001_10001\", \"pk\": \"10000000000000001\", \"media_type\": 2, \"original_height\": 1078, \"original_width\": 1916, \"user\": {\"username\": \"example_creator\"}, \"caption\": {\"text\": \"\\u793a\\u4f8b\\u89c6\\u9891 & \\u6807\\u9898\", \"pk\": \"10000000000000002\", \"has_translation\": false}, \"taken_at\": 1756684800, \"has_audio\": true, \"video_versions\": [{\"type\": 101, \"url\": \"https://scontent-nrt1-2.cdninstagram.com/example/reel.mp4\"}, {\"type\": 102, \"url\": \"https://scontent-nrt1-2.cdninstagram.com/example/reel.mp4\"}, {\"type\": 103, \"url\": \"https://scontent-nrt1-2.cdninstagram.com/example/reel.mp4\"}], \"image_versions2\": {\"candidates\": [{\"height\": 180, \"width\": 320, \"url\": \"https://scontent-nrt1-1.cdninstagram.com/example/small.jpg\"}, {\"height\": 1078, \"width\": 1916, \"url\": \"https://scontent-nrt1-1.cdninstagram.com/example/cover.jpg\"}]}}}}]}}}\n{\"data\": {\"xdt_api__v1__clips__home__connection_v2\": {\"edges\": [{\"node\": {\"media\": {\"__typename\": \"XDTMediaDict\", \"code\": \"ExampleReel02\", \"id\": \"10000000000000001_10001\", \"pk\": \"10000000000000001\", \"media_type\": 2, \"original_height\": 1078, \"original_width\": 1916, \"user\": {\"username\": \"example_creator\"}, \"caption\": {\"text\": \"\\u793a\\u4f8b\\u89c6\\u9891 & \\u6807\\u9898\", \"pk\": \"10000000000000002\", \"has_translation\": false}, \"taken_at\": 1756684800, \"has_audio\": true, \"video_versions\": [{\"type\": 101, \"url\": \"https://scontent-nrt1-2.cdninstagram.com/example/second.mp4\"}], \"image_versions2\": {\"candidates\": [{\"height\": 180, \"width\": 320, \"url\": \"https://scontent-nrt1-1.cdninstagram.com/example/small.jpg\"}, {\"height\": 1078, \"width\": 1916, \"url\": \"https://scontent-nrt1-1.cdninstagram.com/example/cover.jpg\"}]}}}}]}}}"
+    }
+  },
+  "expected": {
+    "resourceCount": 2,
+    "resourceUrls": [
+      "https://scontent-nrt1-2.cdninstagram.com/example/reel.mp4",
+      "https://scontent-nrt1-2.cdninstagram.com/example/second.mp4"
+    ],
+    "decision": "continue"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "observation": {
+    "stage": "response",
+    "request": {
+      "method": "POST",
+      "url": "https://www.instagram.com/api/graphql",
+      "host": "www.instagram.com",
+      "path": "/api/graphql",
+      "headers": {}
+    },
+    "response": {
+      "statusCode": 200,
+      "headers": {
+        "Content-Type": [
+          "application/json"
+        ]
+      },
+      "contentType": "application/json",
+      "body": "{\"data\":"
+    }
+  },
+  "expected": {
+    "resourceCount": 0,
+    "resourceUrls": [],
+    "decision": "continue"
+  }
+}

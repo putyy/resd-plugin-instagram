@@ -1,0 +1,131 @@
+{
+  "id": "com.putyy.instagram",
+  "name": "Instagram",
+  "author": {
+    "name": "putyy",
+    "url": "https://github.com/putyy"
+  },
+  "version": "1.0.0",
+  "apiVersion": 1,
+  "runtime": "javascript",
+  "entry": "main.js",
+  "permissions": {
+    "domains": [
+      "www.instagram.com",
+      "*.cdninstagram.com"
+    ],
+    "capabilities": [
+      "observe-response",
+      "read-response-body",
+      "emit-resource"
+    ],
+    "bodyLimit": 4194304
+  },
+  "match": [
+    {
+      "stage": "response",
+      "host": "www.instagram.com",
+      "path": "/reels/*",
+      "readBody": true,
+      "contentTypes": [
+        "text/html",
+        "text/html;*"
+      ]
+    },
+    {
+      "stage": "response",
+      "host": "www.instagram.com",
+      "path": "/reel/*",
+      "readBody": true,
+      "contentTypes": [
+        "text/html",
+        "text/html;*"
+      ]
+    },
+    {
+      "stage": "response",
+      "host": "www.instagram.com",
+      "path": "/p/*",
+      "readBody": true,
+      "contentTypes": [
+        "text/html",
+        "text/html;*"
+      ]
+    },
+    {
+      "stage": "response",
+      "host": "www.instagram.com",
+      "path": "/api/graphql",
+      "readBody": true,
+      "contentTypes": [
+        "application/json",
+        "application/json;*"
+      ]
+    },
+    {
+      "stage": "response",
+      "host": "www.instagram.com",
+      "path": "/graphql/query",
+      "readBody": true,
+      "contentTypes": [
+        "application/json",
+        "application/json;*"
+      ]
+    },
+    {
+      "stage": "response",
+      "host": "*.cdninstagram.com",
+      "path": "*.mp4",
+      "readBody": false,
+      "contentTypes": [
+        "video/mp4",
+        "video/mp4;*"
+      ]
+    }
+  ],
+  "settingsSchema": {
+    "type": "object",
+    "properties": {
+      "enableLog": {
+        "type": "boolean",
+        "default": false,
+        "x-locales": {
+          "zh": {
+            "name": "启用日志",
+            "description": "记录插件调试日志，排查问题时开启。"
+          },
+          "en": {
+            "name": "Enable logging",
+            "description": "Record plugin debug logs for troubleshooting."
+          }
+        }
+      }
+    }
+  },
+  "priority": 1750,
+  "locales": {
+    "zh": {
+      "name": "Instagram 视频",
+      "description": "从 Reels 页面及 GraphQL 响应提取 MP4、标题、作者和封面。"
+    },
+    "en": {
+      "name": "Instagram Video",
+      "description": "Extract MP4 video, captions, authors and covers from Reels pages and GraphQL responses."
+    }
+  },
+  "resourceKinds": [
+    {
+      "id": "media.video",
+      "icon": "video",
+      "color": "#2080f0",
+      "locales": {
+        "zh": {
+          "name": "视频"
+        },
+        "en": {
+          "name": "Video"
+        }
+      }
+    }
+  ]
+}

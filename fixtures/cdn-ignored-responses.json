@@ -1,0 +1,139 @@
+{
+  "observations": [
+    {
+      "stage": "response",
+      "request": {
+        "method": "GET",
+        "url": "https://scontent-nrt1-2.cdninstagram.com:8443/example/player-track.mp4",
+        "host": "scontent-nrt1-2.cdninstagram.com:8443",
+        "path": "/example/player-track.mp4",
+        "headers": {
+          "Referer": [
+            "https://www.instagram.com/"
+          ]
+        }
+      },
+      "response": {
+        "statusCode": 206,
+        "contentType": "video/mp4",
+        "headers": {
+          "Content-Type": [
+            "video/mp4"
+          ],
+          "Content-Range": [
+            "bytes 1006-2392089/3000000"
+          ]
+        }
+      }
+    },
+    {
+      "stage": "response",
+      "request": {
+        "method": "GET",
+        "url": "http://scontent-nrt1-2.cdninstagram.com/example/player-track.mp4",
+        "host": "scontent-nrt1-2.cdninstagram.com",
+        "path": "/example/player-track.mp4",
+        "headers": {
+          "Referer": [
+            "https://www.instagram.com/"
+          ]
+        }
+      },
+      "response": {
+        "statusCode": 206,
+        "contentType": "video/mp4",
+        "headers": {
+          "Content-Type": [
+            "video/mp4"
+          ],
+          "Content-Range": [
+            "bytes 1006-2392089/3000000"
+          ]
+        }
+      }
+    },
+    {
+      "stage": "response",
+      "request": {
+        "method": "GET",
+        "url": "https://scontent-nrt1-2.cdninstagram.com:443/example/player-track.mp4?bytestart=1006&byteend=2392089",
+        "host": "scontent-nrt1-2.cdninstagram.com:443",
+        "path": "/example/player-track.mp4",
+        "headers": {
+          "Referer": [
+            "https://www.instagram.com/"
+          ]
+        }
+      },
+      "response": {
+        "statusCode": 302,
+        "contentType": "video/mp4",
+        "headers": {
+          "Content-Type": [
+            "video/mp4"
+          ],
+          "Content-Range": [
+            "bytes 1006-2392089/3000000"
+          ]
+        }
+      }
+    },
+    {
+      "stage": "response",
+      "request": {
+        "method": "GET",
+        "url": "https://scontent-nrt1-2.cdninstagram.com:443/example/player-track.mp4?bytestart=1006&byteend=2392089",
+        "host": "scontent-nrt1-2.cdninstagram.com:443",
+        "path": "/example/player-track.mp4",
+        "headers": {
+          "Referer": [
+            "https://www.instagram.com/"
+          ]
+        }
+      },
+      "response": {
+        "statusCode": 403,
+        "contentType": "video/mp4",
+        "headers": {
+          "Content-Type": [
+            "video/mp4"
+          ],
+          "Content-Range": [
+            "bytes 1006-2392089/3000000"
+          ]
+        }
+      }
+    },
+    {
+      "stage": "response",
+      "request": {
+        "method": "GET",
+        "url": "https://scontent-nrt1-2.cdninstagram.com:443/example/player-track.mp4?bytestart=1006&byteend=2392089",
+        "host": "scontent-nrt1-2.cdninstagram.com:443",
+        "path": "/example/player-track.mp4",
+        "headers": {
+          "Referer": [
+            "https://www.instagram.com/"
+          ]
+        }
+      },
+      "response": {
+        "statusCode": 404,
+        "contentType": "video/mp4",
+        "headers": {
+          "Content-Type": [
+            "video/mp4"
+          ],
+          "Content-Range": [
+            "bytes 1006-2392089/3000000"
+          ]
+        }
+      }
+    }
+  ],
+  "expected": {
+    "resourceCount": 0,
+    "resourceUrls": [],
+    "decision": "continue"
+  }
+}

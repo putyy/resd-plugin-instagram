@@ -1,0 +1,27 @@
+{
+  "observation": {
+    "stage": "response",
+    "request": {
+      "method": "GET",
+      "url": "https://www.instagram.com/reels/ExampleReel01/",
+      "host": "www.instagram.com",
+      "path": "/reels/ExampleReel01/",
+      "headers": {}
+    },
+    "response": {
+      "statusCode": 200,
+      "headers": {
+        "Content-Type": [
+          "text/html"
+        ]
+      },
+      "contentType": "text/html",
+      "body": "<html><head></head><body>Log in</body></html>"
+    }
+  },
+  "expected": {
+    "resourceCount": 0,
+    "resourceUrls": [],
+    "decision": "continue"
+  }
+}

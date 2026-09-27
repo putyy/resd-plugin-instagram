@@ -2,7 +2,7 @@
 
 [中文](README.md) | [English](README-EN.md)
 
-An Instagram Reels video plugin for `res-downloader`.
+An Instagram Reels video plugin for [res-downloader](https://github.com/putyy/res-downloader).
 
 ## Features
 
